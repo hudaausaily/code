@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .b{
+            background-color: aqua;
+            border: 2px ;
+        }
+        .g{
+            background-color: green;
+            border: 2px ;
+        }
+    
+        .r{
+            background-color: rgb(255, 0, 0);
+            border: 2px ;
+        }
+    
+        .o{
+            background-color: orange;
+            border: 2px ;
+        }
+    
+        .container{
+         background-color: yellow;
+         display: inline-flex;
+        
+        }
+
+        .content {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+#row{
+    flex-direction: row;
+}
+#column{
+    flex-direction: column;
+}
+
+#col-rev {
+  flex-direction: column-reverse;
+}
+
+#row-rev {
+  flex-direction: row-reverse;
+}
+
+.red {
+  background-color: red;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+    
+    </style>
+</head>
+<body>
+    
+<div class="container">
+
+   <div class="b">blue</div>
+   <div class="g">green</div>
+   <div class="r">red</div>
+   <div class="o">orange</div>
+ 
+
+</div>
+
+<h4>This is a Row</h4>
+<div id="row" class="content">
+<div class="box red">A</div>  
+<div class="box lightblue">B</div>
+<div class="box yellow">C</div> 
+</div>
+
+<h4>This is a column</h4>
+<div id="column" class="content">
+<div class="box red">A</div>  
+<div class="box lightblue">B</div>
+<div class="box yellow">C</div> 
+</div>
+
+<h4>This is a Column-Reverse</h4>
+<div id="col-rev" class="content"> 
+<div class="box red">A</div>  
+<div class="box lightblue">B</div>
+<div class="box yellow">C</div> 
+        </div> 
+<h4>This is a Row-Reverse</h4> 
+<div id="row-rev" class="content"> 
+<div class="box red">A</div>  
+<div class="box lightblue">B</div>   
+<div class="box yellow">C</div>
+</div>
+
+
+
+
+</body>
+</html>
